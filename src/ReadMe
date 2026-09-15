@@ -1,0 +1,95 @@
+# SDP_1 — Burger Builder Pattern
+
+## Project Description
+
+This project demonstrates the Builder Design Pattern using a burger as a real-world example.
+
+A burger can contain different components such as a bun, patty, cheese, sauce, and vegetables. The Builder Pattern allows us to construct a burger step by step instead of using a large constructor with many parameters.
+
+The project is implemented in Java using JDK 17.
+
+## Design Pattern
+
+The project uses the Builder Design Pattern.
+
+The Builder Pattern is useful when an object has multiple components, can have different configurations, and should be created step by step.
+
+In this project, the pattern is used to create different types of burgers.
+
+## Project Structure
+
+Burger — Product. It represents the final burger object and contains the bun, patty, cheese, sauce, and vegetables.
+
+BurgerBuilder — Builder interface. It defines the methods required to construct a burger step by step.
+
+ClassicBurgerBuilder — Concrete Builder. It is used to construct a classic burger with a beef patty and traditional ingredients.
+
+VegetarianBurgerBuilder — Concrete Builder. It is used to construct a vegetarian burger with a veggie patty and different ingredients.
+
+BurgerDirector — Director. It defines reusable construction sequences for different burger configurations.
+
+Main — Client. It creates the builders and the director, builds the burgers, and displays the final results.
+
+## Builder Pattern Structure
+
+Client -> BurgerDirector -> BurgerBuilder -> ClassicBurgerBuilder / VegetarianBurgerBuilder -> Burger
+
+## Example
+
+The project creates two different burgers.
+
+Classic Burger:
+Bun: Sesame bun
+Patty: Beef
+Cheese: Cheddar
+Sauce: Ketchup
+Vegetables: Lettuce and tomato
+
+Vegetarian Burger:
+Bun: Whole wheat bun
+Patty: Veggie
+Cheese: Mozzarella
+Sauce: Garlic sauce
+Vegetables: Lettuce, tomato and cucumber
+
+## Fluent API
+
+The Builder Pattern uses method chaining, also called a fluent API.
+
+Example:
+
+builder
+    .setBun("Sesame bun")
+    .setPatty("Beef")
+    .setCheese("Cheddar")
+    .setSauce("Ketchup")
+    .setVegetables("Lettuce and tomato")
+    .build();
+
+This makes the construction process easier to read and understand.
+
+## How to Run
+
+Requirements:
+- Java JDK 17
+- IntelliJ IDEA
+
+Steps:
+1. Open the project in IntelliJ IDEA.
+2. Make sure JDK 17 is selected.
+3. Open Main.java.
+4. Run the main() method.
+5. The program will display the classic and vegetarian burgers in the console.
+
+## Advantages of Using Builder Pattern
+
+- Makes complex object construction easier to understand.
+- Allows step-by-step construction.
+- Supports different configurations of the same product.
+- Improves readability through method chaining.
+- Separates object construction from the final product.
+
+## Author
+
+Maksut Alibi
+Group: SE-2523
