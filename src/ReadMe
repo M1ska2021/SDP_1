@@ -39,18 +39,18 @@ Client -> BurgerDirector -> BurgerBuilder -> ClassicBurgerBuilder / VegetarianBu
 The project creates two different burgers.
 
 Classic Burger:
-Bun: Sesame bun
+Bun: Bun
 Patty: Beef
 Cheese: Cheddar
 Sauce: Ketchup
 Vegetables: Lettuce and tomato
 
 Vegetarian Burger:
-Bun: Whole wheat bun
-Patty: Veggie
+Bun: Unusual bun
+Patty: Plant based beef
 Cheese: Mozzarella
-Sauce: Garlic sauce
-Vegetables: Lettuce, tomato and cucumber
+Sauce: Ranch
+Vegetables: Lettuce and tomato
 
 ## Fluent API
 
