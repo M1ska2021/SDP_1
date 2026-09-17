@@ -5,7 +5,7 @@ public class BurgerDirector {
     public Burger buildClassicBurger(Builder builder) {
 
         return builder
-                .setBun("Sesame bun")
+                .setBun(" Bun")
                 .setPatty("Beef")
                 .setCheese("Cheddar")
                 .setSauce("Ketchup")
@@ -14,11 +14,11 @@ public class BurgerDirector {
     }
     public Burger buildVegetarianBurger(Builder builder) {
         return builder
-                .setBun("Whole wheat bun")
-                .setPatty("Veggie")
+                .setBun("Unusual Bun")
+                .setPatty("Plant based beef")
                 .setCheese("Mozzarella")
-                .setSauce("Garlic sauce")
-                .setVegetables("Lettuce, tomato and cucumber")
+                .setSauce("Ranch")
+                .setVegetables("Lettuce and tomato")
                 .build();
     }
 }
